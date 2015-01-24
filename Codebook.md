@@ -1,10 +1,17 @@
 # Codebook
 
-This Codebook is one of the four deliverables required for the Course Project in the Coursera Getting and Cleaning Data Course running January 5, 2015 to February 2, 2015. This repository's (https://github.com/SusanZMartin/Getting-and-Cleaning-Data-Course/Course-Project-January-2016) README.md file will give you more information on the other deliverables.
+This Codebook is one of the four deliverables required for the Course Project in the Coursera Getting and Cleaning Data Course running January 5, 2015 to February 2, 2015. This repository's (https://github.com/SusanZMartin/Getting-and-Cleaning-Data-Course/Course-Project-January-2015) README.md file will give you more information on the other deliverables.
 
 ## Introduction
 
-This Codebook aims to provide "information on the structure, contents,and layout of a data file" (1,p1) but also offers some information on how data was collected, processed and data quality. In addition, the paragraph below gives some of the background on the area of Human Action Recognition (HAR) research. This is provided in case the reader is interested and is in no way required for an understanding of the Course Project and its deliverables.
+This Codebook aims to provide "information on the structure, contents,and layout of a data file" (1,p1) but also offers some information on how data was collected, processed and data quality. In addition, the paragraph below gives some of the background on the area of Human Activity Recognition (HAR) research. This is provided in case the reader is interested and is in no way required for an understanding of the Course Project and its deliverables.
+
+### Human Activity Recognition (HAR) Research
+
+Since the 1980s researchers have been working on learning how to 'recognize' human activities from various kinds of data. When we (humans) consider this we fail to see why this should be so challenging - if you show even a normally-abled (in terms of speech, intelligence and visual ability) 5-year-old child a video clip of a person walking and ask them if the person was 'sitting' or 'walking' you are almost 100% to get the right answer unless the child is intentionally misleading you. But a computer if presented with the same data - a video clip - or even sensor data produced by single/multiple sensors on a subject's body collected with high frequency over repeated periods of activity (walking, jogging) will need to 'learn' how to recognize an activity.
+
+
+
 
 
 ## Data Collection Methods
@@ -14,6 +21,11 @@ This Codebook aims to provide "information on the structure, contents,and layout
 ## Data Quality
 
 ## Variables
+
+### Modification to the Variable Names
+
+
+### Variable List
 
 Subject
 
