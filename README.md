@@ -14,6 +14,7 @@ To open the tidy data file I have uploaded (called HARTidyData) from the peer as
 * name the file with whatever file name you prefer - don't forget to give it a .txt extension if your system does not recognize it as a text file and append that extension automatically
 * save the file into your R or RStudio working directory
 * use the code below to read the file successfully into a data frame and view it   
-   `data <- read.table("yourfilename.txt", header=TRUE)   
+   `data <- read.table("yourfilename.txt", header=TRUE)         
+
     View(data)`
    
