@@ -22,12 +22,12 @@ The working directory, as mentioned above, must be where the two files that cont
  
 There are two child directories (or folders) within the UCI HAR Dataset directory called test and train. These directories each contain 3 files that are required for the script to run successfully and the directory names 'test' and 'train' must be preserved (without the quotes). The files in each directory are:  
 * subject_test.txt/subject_train.txt  (2947/7352 rows each of which contains an integer representing one of the 30 subjects in the study - the subject_test file has 9 unique integers while the subject_train file has 21 unique integers)  
-* X_test.txt/X_train  (2947/7352 rows each of which contains 561 values that correspond to a computed 'feature vector' for a unique observation of a specific subject performing a specific activity at a specific time point)  
-* y_test.txt/y_train  (2947/7352 rows each of which contains contains an integer that corresponds to the activity being performed by the subject for that observation)  
+* X_test.txt/X_train.txt  (2947/7352 rows each of which contains 561 values that correspond to a computed 'feature vector' for a unique observation of a specific subject performing a specific activity at a specific time point)  
+* y_test.txt/y_train.txt  (2947/7352 rows each of which contains contains an integer that corresponds to the activity being performed by the subject for that observation)  
 
 ## How to read the tidy data file
 
-To open the tidy data file I have uploaded (called HARTidyData) from the peer assessment page so that you can visually inspect it to confirm that it is indeed 'tidy', do the following:
+To read in the tidy data file I have uploaded (called HARTidyData) from the peer assessment page so that you can visually inspect it to confirm that it is indeed 'tidy', do the following (1):
 
 * right click on the file name shown (HARTidyData) in the first window of the peer assessment page to download it to your computer (apologies that these instructions are rather 'Windows-centric' - I'm confident that if you are using a Mac or other OS you'll be able to figure it out!)
 * name the file with whatever file name you prefer - don't forget to give it a .txt extension if your system does not recognize it as a text file and append that extension automatically
@@ -36,3 +36,9 @@ To open the tidy data file I have uploaded (called HARTidyData) from the peer as
    `data <- read.table("yourfilename.txt", header=TRUE)`  
    `View(data)`
    
+## References
+
+Note that those references that refer to forum postings are only accessible to those that are enrolled in the Getting and Cleaning Data course running January 5, 2015 to February 2, 2015. References use Vancouver style which puts a number in brackets in the text to indicate a citation and lists references in number order.
+
+1. Hood D. David's Project FAQ. In: Getting and Cleaning Data/Forums/Course Project [Internet] Coursera; 2015 Jan 6           cited 2015 Jan 25]. [Original post ~86 lines]. Retrieved from https://class.coursera.org/getdata-010/forum/thread?thread_id=49
+
