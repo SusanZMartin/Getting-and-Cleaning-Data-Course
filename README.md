@@ -38,7 +38,7 @@ To read in the tidy data file I have uploaded (called HARTidyData) from the peer
    
 ## References
 
-Note that those references that refer to forum postings are only accessible to those that are enrolled in the Getting and Cleaning Data course running January 5, 2015 to February 2, 2015. References use Vancouver style which puts a number in brackets in the text to indicate a citation and lists references in number order.
+Note that those references that refer to forum postings are only accessible to those that are enrolled in the Getting and Cleaning Data course running January 5, 2015 to February 2, 2015. References use Vancouver style which puts a number in brackets in the text to indicate a citation and arranges the reference list by ascending numerical order by citation number.
 
-1. Hood D. David's Project FAQ. In: Getting and Cleaning Data/Forums/Course Project [Internet] Coursera; 2015 Jan 6           cited 2015 Jan 25]. [Original post ~86 lines]. Retrieved from https://class.coursera.org/getdata-010/forum/thread?thread_id=49
+1. Hood D. David's Project FAQ. In: Getting and Cleaning Data/Forums/Course Project [Internet] Coursera; 2015 Jan 6           [cited 2015 Jan 25]. [Original post ~86 lines]. Retrieved from https://class.coursera.org/getdata-010/forum/thread?thread_id=49
 
