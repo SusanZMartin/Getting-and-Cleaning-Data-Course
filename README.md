@@ -5,10 +5,10 @@ There are four deliverables for the Course Project in the Getting and Cleaning D
 2. a Codebook.md document  
 3. a run_analysis.R script that produces the final tidy data set  
 4. the HARTidyData.txt file which is a text version of the tidy data set and has been uploaded to Coursera for peer assessment  
-* README.md document (which you are currently reading)  
-* Codebook.md document  
-* the run_analysis.R script that produces the final tidy data set  
-* the HARTidyData.txt file which is a text version of the tidy data set and has been uploaded to Coursera for peer assessment  
+1. README.md document (which you are currently reading)  
+2. Codebook.md document  
+3. the run_analysis.R script that produces the final tidy data set  
+4. the HARTidyData.txt file which is a text version of the tidy data set and has been uploaded to Coursera for peer assessment  
 
 ## Assumptions for Successful Execution of run_analysis.R
 
