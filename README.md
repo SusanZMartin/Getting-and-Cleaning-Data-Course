@@ -1,2 +1,11 @@
-# Getting-and-Cleaning-Data-Course-Project
-This is where I have stored the script, codebook and README files associated with this Course Project. This course is taking place from Jan-Feb 2015.
+# Course Project
+
+## Components Of This Assignment
+
+## Assumptions for Successful Execution of run_analysis.R
+
+working directory, packages, version of R, modifications to features.txt
+
+## How to read the tidy data file
+
+
