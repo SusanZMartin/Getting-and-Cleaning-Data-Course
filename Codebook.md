@@ -8,6 +8,10 @@
 
 ## Variables
 
+Subject
+
+Activity
+
 tBodyAcc.mean__.X
 
 tBodyAcc.mean__.Y
@@ -148,23 +152,23 @@ fBodyAccMag.std__
 
 fBodyAccMag.meanFreq__
 
-fBodyBodyAccJerkMag.mean__
+fBodyAccJerkMag.mean__
 
-fBodyBodyAccJerkMag.std__
+fBodyAccJerkMag.std__
 
-fBodyBodyAccJerkMag.meanFreq__
+fBodyAccJerkMag.meanFreq__
 
-fBodyBodyGyroMag.mean__
+fBodyGyroMag.mean__
 
-fBodyBodyGyroMag.std__
+fBodyGyroMag.std__
 
-fBodyBodyGyroMag.meanFreq__
+fBodyGyroMag.meanFreq__
 
-fBodyBodyGyroJerkMag.mean__
+fBodyGyroJerkMag.mean__
 
-fBodyBodyGyroJerkMag.std__
+fBodyGyroJerkMag.std__
 
-fBodyBodyGyroJerkMag.meanFreq__
+fBodyGyroJerkMag.meanFreq__
 
 angle_tBodyAccMean.gravity_
 
