@@ -1,10 +1,17 @@
 # Codebook
 
+This Codebook is one of the four deliverables required for the Course Project in the Coursera Getting and Cleaning Data Course running January 5, 2015 to February 2, 2015. This repository's (https://github.com/SusanZMartin/Getting-and-Cleaning-Data-Course/Course-Project-January-2016) README.md file will give you more information on the other deliverables.
+
 ## Introduction
+
+This Codebook aims to provide "information on the structure, contents,and layout of a data file" (1,p1) but also offers some information on how data was collected, processed and data quality. In addition, the paragraph below gives some of the background on the area of Human Action Recognition (HAR) research. This is provided in case the reader is interested and is in no way required for an understanding of the Course Project and its deliverables.
+
 
 ## Data Collection Methods
 
-## Manipulation of Collected Data to Produce Feature Vectors
+## Data Processing
+
+## Data Quality
 
 ## Variables
 
@@ -186,3 +193,7 @@ angle_Z.gravityMean_
 
 ## References
 
+Note that those references that refer to forum postings are only accessible to those that are enrolled in the Getting and Cleaning Data course running January 5, 2015 to February 2, 2015. References use Vancouver style which puts a number in brackets in the text to indicate a citation and arranges the reference list by ascending numerical order by citation number.
+
+1. FAQs [Internet]. [cited 2015 Jan 24]. Available from: http://www.icpsr.umich.edu/icpsrweb/ICPSR/support/faqs/2006/01/what-is-codebook
+2. 
