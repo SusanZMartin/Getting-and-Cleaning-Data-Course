@@ -1,6 +1,10 @@
 # Course Project
 
 There are four deliverables for the Course Project in the Getting and Cleaning Data Course offered by Coursera from January 5, 2015 to February 2, 2015, the first three of which are found in this repository (https://github.com/SusanZMartin/Getting-and-Cleaning-Data-Course/tree/Course-Project-January-2015):  
+1. a README.md document (which you are currently reading)
+2. a Codebook.md document  
+3. a run_analysis.R script that produces the final tidy data set  
+4. the HARTidyData.txt file which is a text version of the tidy data set and has been uploaded to Coursera for peer assessment  
 * README.md document (which you are currently reading)  
 * Codebook.md document  
 * the run_analysis.R script that produces the final tidy data set  
