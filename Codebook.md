@@ -1,5 +1,12 @@
+### Codebook
 
-Variables
+## Introduction
+
+## Data Collection Methods
+
+## Manipulation of Collected Data to Produce Feature Vectors
+
+## Variables
 
 tBodyAcc.mean__.X
 
