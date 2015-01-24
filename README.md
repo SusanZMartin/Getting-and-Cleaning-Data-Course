@@ -9,7 +9,7 @@ There are four deliverables for the Course Project in the Getting and Cleaning D
 ## Assumptions for Successful Execution of run_analysis.R
 
 To successfully reproduce an EXACT copy of the tidy data set from your computer by running the run_analysis.R script contained in this repository the following conditions must be met:  
-* you must replicate the environment under which the script was run (clear your environment by running `rm(list=ls())`, install the dplyr package if it is not installed and ensure that you are using R Version 3.1.2 (nickname 'Pumpkin Helmet') or later  
+* you must replicate the environment under which the script was run (clear your environment by running `rm(list=ls())`, install the dplyr package if it is not installed and ensure that you are using R Version 3.1.2 (nickname 'Pumpkin Helmet') or later)    
 * you must download the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip   
 * the top level of the data (which will default to a folder named 'UCI HAR Dataset' when you extract the files) must be your working directory and the files and directory structure of the downloaded data must be as specified below   
 * the features.txt file must be modified as described in the Codebook (https://github.com/SusanZMartin/Getting-and-Cleaning-Data-Course/blob/Course-Project-January-2015/Codebook.md) to remove 'illegal' characters from the variable names   
@@ -19,11 +19,11 @@ To successfully reproduce an EXACT copy of the tidy data set from your computer 
 The working directory, as mentioned above, must be where the two files that contain information that pertain to both the TRAIN and the TEST data reside. This directory (or folder) will default to UCI HAR Dataset if you simply extract the files without specifying any parameters. These two files are called:  
 * features.txt (561 rows each of which contains an integer followed by a string that indicates the name of the variable that corresponds to that column in the X_train and X_test datafiles - this file must be modified as described in the Codebook)  
 * activity_labels.txt (6 rows each of which contains an integer followed by a string that indicates which of 6 activities is represented by the corresponding integer)  
-* 
+ 
 There are two child directories (or folders) within the UCI HAR Dataset directory called test and train. These directories each contain 3 files that are required for the script to run successfully and the directory names 'test' and 'train' must be preserved (without the quotes). The files in each directory are:  
-* subject_test.txt/subject_train.txt (2947/7352 rows each of which contains an integer representing one of the 30 subjects in the study - the subject_test file has 9 unique integers while the subject_train file has 21 unique integers)  
-* X_test.txt/X_train (2947/7352 rows each of which contains 561 values that correspond to a computed 'feature vector' for a unique observation of a specific subject performing a specific activity at a specific time point)  
-* y_test.txt/y_train (2947/7352 rows each of which contains contains an integer that corresponds to the activity being performed by the subject for that observation)  
+* subject_test.txt/subject_train.txt * (2947/7352 rows each of which contains an integer representing one of the 30 subjects in the study - the subject_test file has 9 unique integers while the subject_train file has 21 unique integers)  
+* X_test.txt/X_train  * (2947/7352 rows each of which contains 561 values that correspond to a computed 'feature vector' for a unique observation of a specific subject performing a specific activity at a specific time point)  
+* y_test.txt/y_train  * (2947/7352 rows each of which contains contains an integer that corresponds to the activity being performed by the subject for that observation)  
 
 ## How to read the tidy data file
 
