@@ -60,270 +60,342 @@ The unique ID of the experimental subject
 __Activity__   
 Character  
 Possible Values: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS  
-The activity that corresponds to that row's measurements
+The six activities that subjects performed during the experiment.  
 
 **tBodyAcc.mean__.X**     
 Numeric  
 -1:1*  
+The mean of the time domain signal measuring acceleration due primarily to body motion along the X axis.**  
 
 **tBodyAcc.mean__.Y**   
 Numeric  
--1:1*  
+-1:1*   
+The mean of the time domain signal measuring acceleration due primarily to body motion along the Y axis.**  
 
 **tBodyAcc.mean__.Z**   
 Numeric  
 -1:1*  
+The mean of the time domain signal measuring acceleration due primarily to body motion along the Z axis.**   
    
+**tBodyAcc.std__.X**   
+Numeric  
+-1:1*  
+The standard deviation of the time domain signal measuring acceleration due primarily to body motion along the X axis.** 
+
 **tBodyAcc.std__.Y**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain signal measuring acceleration due primarily to body motion along the Y axis.**  
 
 **tBodyAcc.std__.Z**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain signal measuring acceleration due primarily to body motion along the Z axis.**  
 
 **tGravityAcc.mean__.X**   
 Numeric  
 -1:1*  
+The mean of the time domain signal measuring acceleration due primarily to gravity along the X axis.**   
 
 **tGravityAcc.mean__.Y**   
 Numeric  
 -1:1*  
+The mean of the time domain signal measuring acceleration due primarily to gravity along the Y axis.**   
 
 **tGravityAcc.mean__.Z**   
 Numeric  
 -1:1*  
+The mean of the time domain signal measuring acceleration due primarily to gravity along the Z axis.**    
 
 **tGravityAcc.std__.X**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain signal measuring acceleration due primarily to gravity along the X axis.**   
 
 **tGravityAcc.std__.Y**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain signal measuring acceleration due primarily to gravity along the Y axis.**   
 
 **tGravityAcc.std__.Z**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain signal measuring acceleration due primarily to gravity along the Z axis.**   
 
 **tBodyAccJerk.mean__.X**   
 Numeric  
 -1:1*  
+The mean of the time domain body acceleration Jerk signal along the X axis (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyAccJerk.mean__.Y**   
 Numeric  
 -1:1*  
+The mean of the time domain body acceleration Jerk signal along the Y axis (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyAccJerk.mean__.Z**   
 Numeric  
 -1:1*  
+The mean of the time domain body acceleration Jerk signal along the Z axis (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyAccJerk.std__.X**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain body acceleration Jerk signal along the X axis (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyAccJerk.std__.Y**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain body acceleration Jerk signal along the Y axis (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyAccJerk.std__.Z**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain body acceleration Jerk signal along the Z axis (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyGyro.mean__.X**   
 Numeric  
 -1:1*  
+The mean of the time domain signal measuring the body's angular speed along the X axis.**   
 
 **tBodyGyro.mean__.Y**  
 Numeric  
 -1:1*  
+The mean of the time domain signal measuring the body's angular speed along the Y axis.**   
 
 **tBodyGyro.mean__.Z**   
 Numeric  
 -1:1*  
+The mean of the time domain signal measuring the body's angular speed along the Z axis.**   
 
 **tBodyGyro.std__.X**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain signal measuring the body's angular speed along the X axis.**   
 
 **tBodyGyro.std__.Y**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain signal measuring the body's angular speed along the Y axis.**   
 
 **tBodyGyro.std__.Z**  
 Numeric  
 -1:1*  
+The standard deviation of the time domain signal measuring the body's angular speed along the Z axis.**   
 
 **tBodyGyroJerk.mean__.X**   
 Numeric  
 -1:1*  
+The mean of the time domain body angular speed Jerk signal along the X axis (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyGyroJerk.mean__.Y**  
 Numeric  
 -1:1*  
+The mean of the time domain body angular speed Jerk signal along the Y axis (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyGyroJerk.mean__.Z**   
 Numeric  
 -1:1*  
+The mean of the time domain body angular speed Jerk signal along the Z axis (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyGyroJerk.std__.X**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain body angular speed Jerk signal along the X axis (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyGyroJerk.std__.Y**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain body angular speed Jerk signal along the Y axis (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyGyroJerk.std__.Z**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain body angular speed Jerk signal along the Z axis (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyAccMag.mean__**   
 Numeric  
 -1:1*  
+The mean of the time domain signal measuring the magnitude of acceleration due primarily to body motion.**  
 
 **tBodyAccMag.std__**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain signal measuring the magnitude of acceleration due primarily to body motion.**  
 
 **tGravityAccMag.mean__**   
 Numeric  
 -1:1*  
+The mean of the time domain signal measuring the magnitude of acceleration due primarily to gravity.**  
 
 **tGravityAccMag.std__**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain signal measuring the magnitude of acceleration due primarily to gravity.**  
 
 **tBodyAccJerkMag.mean__**   
 Numeric  
 -1:1*  
+The mean of the time domain body acceleration Jerk magnitude signal (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyAccJerkMag.std__**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain body acceleration Jerk magnitude signal (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyGyroMag.mean__**   
 Numeric  
 -1:1*  
+The mean of the time domain signal measuring the magnitude of the body's angular speed.**   
 
 **tBodyGyroMag.std__**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain signal measuring the magnitude of the body's angular speed.**   
 
 **tBodyGyroJerkMag.mean__**   
 Numeric  
 -1:1*  
+The mean of the time domain angular speed Jerk magnitude signal (derived in time from body linear acceleration and angular velocity).**   
 
 **tBodyGyroJerkMag.std__**   
 Numeric  
 -1:1*  
+The standard deviation of the time domain angular speed Jerk magnitude signal (derived in time from body linear acceleration and angular velocity).**   
 
 **fBodyAcc.mean__.X**   
 Numeric  
--1:1*  
+-1:1* 
+The mean of the frequency domain signal measuring acceleration due primarily to body motion along the X axis.**     
 
 **fBodyAcc.mean__.Y**   
 Numeric  
 -1:1*  
+The mean of the frequency domain signal measuring acceleration due primarily to body motion along the Y axis.**     
 
 **fBodyAcc.mean__.Z**   
 Numeric  
 -1:1*  
+The mean of the frequency domain signal measuring acceleration due primarily to body motion along the Z axis.**     
 
 **fBodyAcc.std__.X**   
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain signal measuring acceleration due primarily to body motion along the X axis.**     
 
 **fBodyAcc.std__.Y**   
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain signal measuring acceleration due primarily to body motion along the Y axis.**     
 
 **fBodyAcc.std__.Z**   
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain signal measuring acceleration due primarily to body motion along the Z axis.**   
 
 **fBodyAccJerk.mean__.X**   
 Numeric  
 -1:1*  
+The mean of the frequency domain body acceleration Jerk signal along the X axis.**   
 
 **fBodyAccJerk.mean__.Y**   
 Numeric  
 -1:1*  
+The mean of the frequency domain body acceleration Jerk signal along the Y axis.**   
 
 **fBodyAccJerk.mean__.Z**   
 Numeric  
 -1:1*  
+The mean of the frequency domain body acceleration Jerk signal along the Z axis.**   
 
 **fBodyAccJerk.std__.X**   
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain body acceleration Jerk signal along the X axis.**   
 
 **fBodyAccJerk.std__.Y**   
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain body acceleration Jerk signal along the Y axis.**   
 
 **fBodyAccJerk.std__.Z**   
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain body acceleration Jerk signal along the Z axis.**   
 
 **fBodyGyro.mean__.X**   
 Numeric  
 -1:1*  
+The mean of the frequency domain body angular speed signal along the X axis.**   
 
 **fBodyGyro.mean__.Y**   
 Numeric  
 -1:1*  
+The mean of the frequency domain body angular speed signal along the Y axis.**   
 
 **fBodyGyro.mean__.Z**   
 Numeric  
 -1:1*  
+The mean of the frequency domain body angular speed signal along the Z axis.**   
 
 **fBodyGyro.std__.X**   
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain body angular speed signal along the X axis.**  
 
 **fBodyGyro.std__.Y**   
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain body angular speed signal along the Y axis.**  
 
 **fBodyGyro.std__.Z**   
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain body angular speed signal along the Z axis.**  
 
 **fBodyAccMag.mean__**   
 Numeric  
 -1:1*  
+The mean of the frequency domain signal measuring the magnitude of acceleration due primarily to body motion.** 
 
 **fBodyAccMag.std__**   
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain signal measuring the magnitude of acceleration due primarily to body motion.** 
 
 **fBodyAccJerkMag.mean__**   
 Numeric  
 -1:1*  
+The mean of the frequency domain body acceleration Jerk magnitude signal (derived in time from body linear acceleration and angular velocity).** 
 
 **fBodyAccJerkMag.std__**   
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain body aceleration Jerk magnitude signal (derived in time from body linear acceleration and angular velocity).** 
 
 **fBodyGyroMag.mean__**   
 Numeric  
 -1:1*  
+The mean of the frequency domain body angular speed magnitude signal.** 
 
 **fBodyGyroMag.std__**  
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain body angular speed magnitude signal.** 
 
 **fBodyGyroJerkMag.mean__**    
 Numeric  
 -1:1*  
+The mean of the frequency domain body angular speed Jerk magnitude signal (derived in time from body linear acceleration and angular velocity).** 
 
 **fBodyGyroJerkMag.std__**     
 Numeric  
 -1:1*  
+The standard deviation of the frequency domain body angular speed Jerk magnitude signal (derived in time from body linear acceleration and angular velocity).** 
 
 
 *"Features are normalized and bounded within [-1,1]". (9, p2)
+
+**Three dimensional magnitude variables were produced using the Euclidean norm. Variables in the frequency domain (indicated by a lower case f as the first character in the variable name) were produced by applying a Fast Fourier Transform. My understanding of the actual definitions of these variables is superficial but informed by a variety of readings (3-4,8-9,10)
 
 ## References
 
@@ -338,7 +410,11 @@ Note that those references that refer to forum postings are only accessible to t
 7. Fantechi A, Nugent CD, Pinzuti A, Vicario E, Magherini T. An On-line system for automated recognition of human activities. European Journal of Law and Technology [Internet]. 2013 Aug 12;4(2). Available from: http://ejlt.org/article/view/189   
 8. Anguita D, Ghio A, Oneto L, Parra X, Reyes-Ortiz JL. Feature Selection (features_info.txt file included with the public domain dataset). Dec 2012. Available from http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip   
 9. Anguita D, Ghio A, Oneto L, Parra X, Reyes-Ortiz JL. Human Activity Recognition Using Smartphones Dataset
-Version 1.0 (README.txt file included with the public domain dataset). Dec 2012. Available from http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip  
+Version 1.0 (README.txt file included with the public domain dataset). Dec 2012. Available from http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip 
+10. Bayat A, Pomplun M, Tran DA. A Study on Human Activity Recognition Using Accelerometer Data from Smartphones. Procedia Computer Science. 2014;34:450–7. 
+
+
+
 
 
 
