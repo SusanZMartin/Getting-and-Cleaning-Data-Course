@@ -48,7 +48,7 @@ The tidy data file differs from the entire dataset in that:
 * each row contains the mean of a variable that was measured for a subject while performing that activity (thus the tidy data file has 180 rows - 30 subjects each of which performed 6 activities)  
 * there are not 561 measurements for each subject:activity combination but rather 66 which were selected based on the instruction for the assignment which was to extract "only the measurements on the mean and standard deviation for each measurement" (2,p1) (for more information on the rationale used to select these variables see the Codebook)
 
-The tidy data set has the dimensions of 180 rows by 68 columns (66 variables plus the Subject and Activity columns).
+The tidy data set has the dimensions of 180 rows by 68 columns (66 variables plus the Subject and Activity columns). Note that the tidy data set produced by my run_analysis.R script is named FinalTidy.
 
 ## References
 
