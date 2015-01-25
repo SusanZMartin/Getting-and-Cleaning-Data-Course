@@ -1,31 +1,17 @@
-## I have modified the features.txt file so that it no longer has hyphens and
-## brackets or commas - also replaced BodyBody with Body will now try this 
-## - need to capture these changes in Codebook entire routine with this change
+## To learn more about conditions required to reproduce the tidy data set that is
+## the end product of this script please see the README.md and Codebook.md documents at
+## https://github.com/SusanZMartin/Getting-and-Cleaning-Data-Course/tree/Course-Project-January-2015/
 
+## The script that follows:
+## *Merges the training and the test sets to create one data set. 
+## *Extracts only the measurements on the mean and standard deviation for each measurement.  
+## *Uses descriptive activity names to name the activities in the data set 
+## *Appropriately labels the data set with descriptive variable names.
+## *From the data set in the previous step, creates a second, independent tidy data set 
+##  with the average of each variable for each activity and each subject.
 
-
-## The script that follows
-## Merges the training and the test sets to create one data set. 
-## Extracts only the measurements on the mean and standard deviation for each measurement.  
-## Uses descriptive activity names to name the activities in the data set 
-## Appropriately labels the data set with descriptive variable names.
-## From the data set in the previous set, creates a second, independent tidy data set 
-## with the average of each variable for each activity and each subject.
-
-##  First I want to read in each of the files into a data frame and then into a dataframe
-##  table - this involves 8 text files, 3 in the train folder, 3 in the test folder
-##  and two in the parent folder above. The 3 files in each folder are X_<train/test>
-##  which contains the measurements of 561 variables, y_<train/test> which contains
-##  a single column of numbers 1 through 6 which represents different activities and
-##  subject_<train/test> which is a single column of numbers 1 through 30 (9 numbers in
-##  test, 21 numbers in train) which represents the ID of the different subjects. The
-##  features.txt file contains 561 strings which are the column headings for the variables
-##  contained in x_<train/test>. The activity_labels.txt file contains 6 strings which
-##  contain the names of the 6 activities represented by numbers in y_<train/test>.
-
-
-## note the stringsAsFactors = FALSE in the first two so that the column headings
-## come across as strings rather than being interpreted as factors
+## Loads the dplyr package and reads all the needed text files into data frame tables
+## use the argument stringsAsFactors = FALSE to avoid any text values being interpreted as factors
 
 library(dplyr)
 
@@ -48,14 +34,10 @@ Ytest <- tbl_df(Ytest)
 TestSub <- read.table("test/subject_test.txt", stringsAsFactors = FALSE)
 TestSub <- tbl_df(TestSub)
 
-## Looking at the data frame tables created I see that the 'train' data contains
-## 7,352 rows (21 subjects - 1,3,5,6,7,8,11,14,15,16,17,19,21,22,23,25,26,27,28,29,30)
-## and the 'test' data contains 2,947 rows (9 subjects - 2,4,9,10,12,13,18,20,24)
 
-
-## Now I want to put the activity names into the Ytrain and Ytest rather than
-## having the numbers - this is not a particularly elegant solution but it works
-
+## *Uses descriptive activity names to name the activities in the data set 
+## The following code replaces integers 1:6 in the data frame table with the corresponding
+## activity - this is not a particularly elegant solution but it works
 
 for (i in 1:2947){
       
@@ -66,8 +48,7 @@ for (i in 1:2947){
       if (Ytest[i,1] == 4) { Ytest[i,1] <- paste("SITTING")}
       if (Ytest[i,1] == 5) { Ytest[i,1] <- paste("STANDING")}
       if (Ytest[i,1] == 6) { Ytest[i,1] <- paste("LAYING")}
-      
-      
+
 }
 
 for (i in 1:7352){
@@ -84,8 +65,10 @@ for (i in 1:7352){
       
 }
 
-## finally label the V1 column of Ytrain and Ytest as Activity and
-## the V1 column of TrainSub and TestSub as Subject
+## *Appropriately labels the data set with descriptive variable names.
+## The code directly below replaces the default column heading names of
+## column 1 in the Ytrain, Ytest, TrainSub and TestSub data frame tables
+## with appropriate names
 
 names(Ytrain)[1] <- "Activity"
 names(Ytest)[1] <- "Activity"
@@ -93,9 +76,11 @@ names(Ytest)[1] <- "Activity"
 names(TrainSub)[1] <- "Subject"
 names(TestSub)[1] <- "Subject"
 
-## now lets create two data frame tables TRAIN and TEST by cbinding
-## the 3 data frames (TrainSub,Ytrain,Xtrain and TestSub,Ytest,Xtest)
-## together in this order and then convert to a data frame table
+## *Merges the training and the test sets to create one data set. 
+## I created the merged data set in two steps, first by cbinding three data frame
+## tables together (TrainSub,Ytrain,Xtrain and TestSub,Ytest,Xtest) to create two 
+## data frame tables TRAIN and TEST
+
 
 TRAIN <- cbind(TrainSub,Ytrain,Xtrain)
 TRAIN <- tbl_df(TRAIN)
@@ -103,59 +88,57 @@ TRAIN <- tbl_df(TRAIN)
 TEST <- cbind(TestSub,Ytest,Xtest)
 TEST <- tbl_df(TEST)
 
-## now rbind to put them together and again convert to a data frame table
-## this new data frame table will be called MergedData - it has 563 columns
-## and 10,299 rows
+## *Merges the training and the test sets to create one data set. 
+## In the second step I used rbind to put together TRAIN and TEST into a
+## new data frame table called MergedData (10299, 563)
 
 MergedData <- rbind(TRAIN,TEST)
 MergedData <- tbl_df(MergedData)
 
-## use the renaming method to create one complete data set
-
-## Now I am going to put the variable names from features as column headings on
-## Xtrain and Xtest using for names(<dft name)[i] <- as.character(features[i,2])
-## i will do this in a loop once I verify it works
+## *Appropriately labels the data set with descriptive variable names.
+## The code below replaces default column headings with the actual variable names
+## the offset of +2 is used because the Subject and Activity columns already are named
 
 AllVariablesData <- MergedData
 
 for (i in 1:561) {names(AllVariablesData)[i + 2] <- as.character(features[i,2])}
 
 
-## earlier methods to extract the columns after they had been renamed was causing problems
-## so I will extract them using the script below and THEN rename them
-
-## the actions above are causing problems so I will try to rename the columns in the 
-## MergedData set AFTER the columns are selected out when they still have default
-## variable names
+## *Extracts only the measurements on the mean and standard deviation for each measurement.  
+## This process is accomplished in several steps - first I build a list of the columns headed
+## by a variable name containing mean() [mean__ in modified features.txt file] or std()
+## [std__ in modified features.txt file]. To learn more about the changes made to the features.txt
+## file as well as rationale behind which variables were chosen for extraction see the README.md and/or Codebook at 
+## https://github.com/SusanZMartin/Getting-and-Cleaning-Data-Course/tree/Course-Project-January-2015/
 
 featuresMean <- features[grep("mean__", features$V2),]
 featuresStd <- features[grep("std_", features$V2),]
 
-#put these two together using rbind and then arrange in order
-#use this usetoselect[,1] to select columns from MergedData
+## I then rbind these two separate data frame tables together to form one 
 
 usetoselect <- rbind(featuresMean,featuresStd)
 usetoselect <- arrange(usetoselect, V1)
 
-## Do not forget that we have added two columns - Subject and Activity - to
-## the data frame so the usetoselect numbers need to be offset by 2 (column 1
-## becomes column 3, ...). We must also turn it into a vector for use in 
-## the select process
+## I turn this data frame table into a vector which contains the column numbers
+## to be extracted from the MergedData set (which still has default column
+## headings except for Subject and Activity) - again an offset of +2 is used
+## since columns one and two already exist
 
 extract <- usetoselect[,1]
 offsetext <- mutate(extract, V2 = V1 +2)
 extract <- offsetext[,2]
 extract <- as.vector(t(extract))
 
-## Finally use extract to created our new complete data set with only the Mean
+## Finally use extract to create a new complete data set with only the Mean
 ## and Std() measurements extracted - do not forget to keep first two columns
 
 FinalDataSet <- select(MergedData, 1:2,extract)
 
-## Now we need to put the names at the top of the columns, we can use the renaming
+## *Appropriately labels the data set with descriptive variable names.
+## Now we need to put the names at the top of the extracted columns, we can use the renaming
 ## process developed earlier but use the usetoselect file with the column headings
 ## in the 2nd column and use the [i + 2] for the column to put the name on the top
-## of each column (do this so that a copy remains in case it is needed)
+## of each column (create a copy so have something to revert to in case of errors)
 
 TestFinalRenamed <- FinalDataSet
 
@@ -165,20 +148,11 @@ for (i in 1:z) {names(TestFinalRenamed)[i + 2] <- as.character(usetoselect[i,2])
 
 CompleteExtractedDataSet <- TestFinalRenamed
 
-## Start in the morning of January 23, 2015 with figuring out how to create the
-## tidy data set and tidying up this code
+## *From the data set in the previous step, creates a second, independent tidy data set 
+##  with the average of each variable for each activity and each subject.
 
-
-
-## also start putting together the codebook
-## possible reference for body jerk http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3926561/
-## david recommends looking at this codebook 
-## https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FPUMSDataDict06.pdf 
-## and also see his post in forums at 
-## https://class.coursera.org/getdata-010/forum/thread?thread_id=49#comment-438
-## also read the Hadley Wickham document on tidy data
-
-## arrange the data in subject number order
+## First I arranged the data by Subject in ascending order and created a copy (testtidy)
+## to experiment with in case of errors
 
 arrangeddata <- arrange(CompleteExtractedDataSet, Subject)
 
@@ -190,13 +164,17 @@ testtidy <- group_by(arrangeddata, Subject, Activity)
 
 variable1 <- summarise(testtidy, mean(tBodyAcc.mean__.X))
 
-## and here is how we do it for the whole dataset
-## tomorrow - jan 23rd - concentrate on getting this exactly right
-## and working on codebook and readme etc
+## *From the data set in the previous step, creates a second, independent tidy data set 
+##  with the average of each variable for each activity and each subject.
+## The single line of code below creates a tidy data set where each row contains a single
+## observation of the mean of the extracted variables for each subject and activity 
+## combination. FinalTidy has 180 rows (30 subjects X 6 activities) and 68 columns 
+## (Subject, Activity and 66 numeric variables)
 
 FinalTidy <- summarise_each(testtidy, funs(mean))
 
-## some extra functions that you might like to look at
+## Here is some additional code that can be run if you wish to see some more information about
+## the number of observations per subject and per activity for each subject
 
 # subjact <- group_by(arrangeddata, Subject, Activity)
 # actpersubj <- summarise(subjact, count = n())
