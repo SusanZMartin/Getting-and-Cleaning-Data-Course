@@ -34,13 +34,11 @@ Ytest <- tbl_df(Ytest)
 TestSub <- read.table("test/subject_test.txt", stringsAsFactors = FALSE)
 TestSub <- tbl_df(TestSub)
 
-
 ## *Uses descriptive activity names to name the activities in the data set 
 ## The following code replaces integers 1:6 in the data frame table with the corresponding
 ## activity - this is not a particularly elegant solution but it works
 
 for (i in 1:2947){
-      
       
       if (Ytest[i,1] == 1) { Ytest[i,1] <- paste("WALKING")}
       if (Ytest[i,1] == 2) { Ytest[i,1] <- paste("WALKING_UPSTAIRS")}
@@ -81,7 +79,6 @@ names(TestSub)[1] <- "Subject"
 ## tables together (TrainSub,Ytrain,Xtrain and TestSub,Ytest,Xtest) to create two 
 ## data frame tables TRAIN and TEST
 
-
 TRAIN <- cbind(TrainSub,Ytrain,Xtrain)
 TRAIN <- tbl_df(TRAIN)
 
@@ -102,7 +99,6 @@ MergedData <- tbl_df(MergedData)
 AllVariablesData <- MergedData
 
 for (i in 1:561) {names(AllVariablesData)[i + 2] <- as.character(features[i,2])}
-
 
 ## *Extracts only the measurements on the mean and standard deviation for each measurement.  
 ## This process is accomplished in several steps - first I build a list of the columns headed
@@ -172,6 +168,10 @@ variable1 <- summarise(testtidy, mean(tBodyAcc.mean__.X))
 ## (Subject, Activity and 66 numeric variables)
 
 FinalTidy <- summarise_each(testtidy, funs(mean))
+
+## Display the tidy data set
+
+View(FinalTidy)
 
 ## Here is some additional code that can be run if you wish to see some more information about
 ## the number of observations per subject and per activity for each subject
