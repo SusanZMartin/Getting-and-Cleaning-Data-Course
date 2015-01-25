@@ -5,12 +5,12 @@
 
 
 ## The script that follows
-## 1. Merges the training and the test sets to create one data set. 
-## 2. Extracts only the measurements on the mean and standard deviation for each measurement.  
-## 3. Uses descriptive activity names to name the activities in the data set 
-## 4. Appropriately labels the data set with descriptive variable names.
-## 5. From the data set in step 4, creates a second, independent tidy data set 
-##    with the average of each variable for each activity and each subject.
+## Merges the training and the test sets to create one data set. 
+## Extracts only the measurements on the mean and standard deviation for each measurement.  
+## Uses descriptive activity names to name the activities in the data set 
+## Appropriately labels the data set with descriptive variable names.
+## From the data set in the previous set, creates a second, independent tidy data set 
+## with the average of each variable for each activity and each subject.
 
 ##  First I want to read in each of the files into a data frame and then into a dataframe
 ##  table - this involves 8 text files, 3 in the train folder, 3 in the test folder
@@ -23,11 +23,6 @@
 ##  contained in x_<train/test>. The activity_labels.txt file contains 6 strings which
 ##  contain the names of the 6 activities represented by numbers in y_<train/test>.
 
-## My 8 names for data frames are going to be labels, features, Xtrain, Xtest, 
-## Ytrain, Ytest, TrainSub, TestSub
-
-## so for each of 8 files I will do dfname <- read.table(filename), followed by 
-## <labelname> <- tbl_df(dfname)
 
 ## note the stringsAsFactors = FALSE in the first two so that the column headings
 ## come across as strings rather than being interpreted as factors
@@ -164,7 +159,9 @@ FinalDataSet <- select(MergedData, 1:2,extract)
 
 TestFinalRenamed <- FinalDataSet
 
-for (i in 1:86) {names(TestFinalRenamed)[i + 2] <- as.character(usetoselect[i,2])}
+z <- nrow(usetoselect)
+
+for (i in 1:z) {names(TestFinalRenamed)[i + 2] <- as.character(usetoselect[i,2])}
 
 CompleteExtractedDataSet <- TestFinalRenamed
 
