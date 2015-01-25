@@ -6,7 +6,7 @@ There are four deliverables for the Course Project in the Getting and Cleaning D
 * the run_analysis.R script that produces the final tidy data set  
 * the HARTidyData.txt file which is a text version of the tidy data set and has been uploaded to Coursera for peer assessment  
 
-## Assumptions for Successful Execution of run_analysis.R
+## Conditions Required for Successful Execution of run_analysis.R
 
 To successfully reproduce an EXACT copy of the tidy data set from your computer by running the run_analysis.R script contained in this repository the following conditions must be met:  
 * you must replicate the environment under which the script was run (clear your environment by running `rm(list=ls())`, install the dplyr package if it is not installed and ensure that you are using R Version 3.1.2 (nickname 'Pumpkin Helmet') or later)    
