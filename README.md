@@ -42,6 +42,25 @@ There are two child directories (or folders) within the UCI HAR Dataset director
 * X_test.txt/X_train.txt  (2947/7352 rows each of which contains 561 values that correspond to a computed 'feature vector' for a unique observation of a specific subject performing a specific activity at a specific time point)  
 * y_test.txt/y_train.txt  (2947/7352 rows each of which contains contains an integer that corresponds to the activity being performed by the subject for that observation)  
 
+## Steps in producing the tidy data file
+
+This is an overview of the steps carried out in the run_analysis.R script (the script is commented so you may also determine what is being done by reading the comments in the file itself):  
+* load the dplyr package    
+* read the 8 text files (features.txt, activity_labels.txt, subject_test.txt, subject_train.txt, X_test.txt, X_train.txt, y_test.txt, y_train.txt) into data frame tables using the read.table function      
+* replace the numbers in the Ytest and Ytrain data frame tables (1:6, in the first column) with the corresponding activity names   
+* label the first column of the Ytest, Ytrain, TestSub and TrainSub with descriptive variable names (Activity and Subject)   
+* join the three data (Ytest, TestSub, XTest and Ytrain, TrainSub, XTrain) frames for each set of subjects (Test and Train) together using cbind to create two data frame tables    
+* join these two data frame tables (TEST and TRAIN) together using rbind to create a complete data set that contains all the observations for all 30 subjects    
+* replace the default column headings (beginning at column 3 since the first two columns were give labels earlier) with descriptive variable names (extracted from the features.txt file earlier)   
+* use the grep function to create a vector that contains the numbers of the columns that contain mean__ or std__ (this results in the extraction of 66 columns)   
+* extract these columns from the data set created from the joining of TEST and TRAIN (this dataset still has default column names)   
+* replace the default column headings in this subset of the complete data set (beginning at column 3 since the first two columns were give labels earlier) with descriptive variable names (extracted from the features.txt file earlier)   
+* arrange this extracted data set in subject order (ascending)   
+* group the data set by Subject and Activity 
+* use the summarise_each function from dplyr to create a tidy data set that contains the mean of each of the 66 variables listed for each unique subject:activity combination   
+
+The tidy data set has the dimensions of 180 rows by 68 columns (66 variables plus the Subject and Activity columns). Note that the tidy data set produced by my run_analysis.R script is named FinalTidy.
+
 ## Composition of the tidy data file
 
 The tidy data file differs from the entire dataset in that:  
