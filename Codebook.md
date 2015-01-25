@@ -395,7 +395,7 @@ The standard deviation of the frequency domain body angular speed Jerk magnitude
 
 *"Features are normalized and bounded within [-1,1]". (9, p2)
 
-**Three dimensional magnitude variables were produced using the Euclidean norm. Variables in the frequency domain (indicated by a lower case f as the first character in the variable name) were produced by applying a Fast Fourier Transform. My understanding of the actual definitions of these variables is superficial but informed by a variety of readings (3-4,8-9,10)
+**Three dimensional magnitude variables were produced using the Euclidean norm. Variables in the frequency domain (indicated by a lower case f as the first character in the variable name) were produced by applying a Fast Fourier Transform. Finally note that the normalization of all variables means that the 66 numeric variables are 'unitless'. (10) My understanding of the actual definitions of these variables is superficial but informed by a variety of readings (3-4,8-9,11)
 
 ## References
 
@@ -410,8 +410,10 @@ Note that those references that refer to forum postings are only accessible to t
 7. Fantechi A, Nugent CD, Pinzuti A, Vicario E, Magherini T. An On-line system for automated recognition of human activities. European Journal of Law and Technology [Internet]. 2013 Aug 12;4(2). Available from: http://ejlt.org/article/view/189   
 8. Anguita D, Ghio A, Oneto L, Parra X, Reyes-Ortiz JL. Feature Selection (features_info.txt file included with the public domain dataset). Dec 2012. Available from http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip   
 9. Anguita D, Ghio A, Oneto L, Parra X, Reyes-Ortiz JL. Human Activity Recognition Using Smartphones Dataset
-Version 1.0 (README.txt file included with the public domain dataset). Dec 2012. Available from http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip 
-10. Bayat A, Pomplun M, Tran DA. A Study on Human Activity Recognition Using Accelerometer Data from Smartphones. Procedia Computer Science. 2014;34:450–7. 
+Version 1.0 (README.txt file included with the public domain dataset). Dec 2012. Available from http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip   
+10. Hood D. David's Project FAQ. In: Getting and Cleaning Data/Forums/Course Project [Internet] Coursera; 2015 Jan 6 [cited 2015 Jan 25]. [Original post ~86 lines]. Retrieved from  https://class.coursera.org/getdata-010/forum/thread?thread_id=49#comment-453
+11. Bayat A, Pomplun M, Tran DA. A Study on Human Activity Recognition Using Accelerometer Data from Smartphones. Procedia Computer Science. 2014;34:450–7. 
+
 
 
 
