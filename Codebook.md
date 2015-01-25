@@ -20,156 +20,310 @@ The researchers recruited 30 volunteers aged between 19 and 48 for this study. N
 
 Twenty one of the subjects (70%) were arbitrarily chosen to be in the TRAIN sample which was used to 'train' the computer in recognizing human activities (these were subjects 1,3,5,6,7,8,11,14,15,16,17,19,21,22,23,25,26,27,28,29,30). The measurements obtained from the 9 subjects in the TEST sample (subjects 2,4,9,10,12,13,18,20,24) were then examined by the computer and assigned an 'activity' based on what it had 'learned' examining the TRAIN sample's measurements. (4)
 
+Number of observations for each subject ranged from a low of 281 to a high of 409 (that is for all 6 activities) with a mean of 343. Number of observations for each activity ranged from a low of 36 to a high of 95 (across all 6 activities) with a mean of 57. More information on the number of observations per subject and number of observations per activity per subject can be found by uncommenting and running lines XX-XX at the end of the run_analysis.R script.
+
 ## Data Processing
 
-The raw data obtained from the phone sensors were filtered to remove noise. (4) The resulting signals were processed mathematically, split into separate components (i.e. acceleration signal split into "gravitational and body motion components" (4, p439)) and in some cases re-sampled to create 10 signals all of which had a time component and 7 of which had a frequency component. These 17 signals were then 'measured' using a variety of methods to create the majority of the 561 variables included in the original dataset. These methods included taking the signal's mean, its standard deviation and its min and max. (8) Of the measurement methods some were applied to all signal types while some were only applied to time domain signals and others to frequency domain signals. (8) 
-
-
+The raw data obtained from the phone sensors were filtered to remove noise. (4) The resulting signals were processed mathematically, split into separate components (i.e. acceleration signal split into "gravitational and body motion components" (4, p439)) and in some cases re-sampled to create 10 signals all of which had a time component and 7 of which had a frequency component (resulting in 17 signals in total). These 17 signals were then 'measured' using a variety of methods to create the majority of the 561 variables included in the original dataset. These methods included taking the signal's mean, its standard deviation and its min and max. (8) Of the measurement methods some were applied to all signal types while some were only applied to time domain signals and others to frequency domain signals. (8) 
 
 ## Data Quality
 
-The 
+The actual data (measurements of the 561 variables, subject information, activity information) had no missing values. However the names assigned to the variables by the researchers (contained in the features.txt file) were problematic and required modifications outside of R before they could be used by functions within the dplyr package. Some cosmetic modifications were also made to variable names that had repeated words. Changes are detailed below in the section titled 'Modification to the Variable Names'.
 
 ## Variables
 
 ### Modification to the Variable Names
 
+Once it became clear that certain functions in R would not work properly (or at all in some cases) with the variable names supplied it became necessary to modify them. The features.txt file was opened in a text editor and a copy was saved as oldfeatures.txt before any changes were made (for future reference). A global replace was then performed which did the following:  
+* replaced '-' (hyphen - without the quotes) with a '.' (period - without the quotes)    
+* replaced ',' (comma - without the quotes) with a '.' (period - without the quotes)  
+* replaced '(' (open bracket - without the quotes) with a '_' (underscore - without the quotes)  
+* replaced ')' (close bracket - without the quotes) with a '_' (underscore - without the quotes)  
+* replaced 'BodyBody' (without the quotes) with 'Body' (without the quotes)
+
+### Rationale for which Variables were Extracted
+
+The list that follows does not contain all the variables that were contained in the original but rather the (much) smaller subset that remains in the tidy data set that is the final product of the run_analysis.R script. The instructions were open to interpretation but I decided that rather than extract any variable with a name containing mean or std I would instead extract only those that contained mean() or std() (mean__ and std__ after modification of the variable names described above). I chose these variables because they are explicitly described in the documentation as being the mean or the standard deviation measurements of the feature vectors. (3-4,8) 
 
 ### Variable List
 
-Subject
+Variable Name
+Type of Variable
+Range (if applicable)/Possible Values
+Brief description
 
-Activity
+Subject  
+Integer (unique)  
+1:30  
+The unique ID of the experimental subject  
+
+Activity  
+Character  
+Possible Values: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS  
+The activity that corresponds to that row's measurements
 
 tBodyAcc.mean__.X   
+Numeric  
+-1:1*  
 
 tBodyAcc.mean__.Y   
+Numeric  
+-1:1*  
 
 tBodyAcc.mean__.Z   
+Numeric  
+-1:1*  
    
 tBodyAcc.std__.Y   
+Numeric  
+-1:1*  
 
 tBodyAcc.std__.Z   
+Numeric  
+-1:1*  
 
 tGravityAcc.mean__.X   
+Numeric  
+-1:1*  
 
 tGravityAcc.mean__.Y   
+Numeric  
+-1:1*  
 
 tGravityAcc.mean__.Z   
+Numeric  
+-1:1*  
 
 tGravityAcc.std__.X   
+Numeric  
+-1:1*  
 
 tGravityAcc.std__.Y   
+Numeric  
+-1:1*  
 
 tGravityAcc.std__.Z   
+Numeric  
+-1:1*  
 
 tBodyAccJerk.mean__.X   
+Numeric  
+-1:1*  
 
 tBodyAccJerk.mean__.Y   
+Numeric  
+-1:1*  
 
 tBodyAccJerk.mean__.Z   
+Numeric  
+-1:1*  
 
 tBodyAccJerk.std__.X   
+Numeric  
+-1:1*  
 
 tBodyAccJerk.std__.Y   
+Numeric  
+-1:1*  
 
 tBodyAccJerk.std__.Z   
+Numeric  
+-1:1*  
 
 tBodyGyro.mean__.X   
+Numeric  
+-1:1*  
 
 tBodyGyro.mean__.Y   
+Numeric  
+-1:1*  
 
 tBodyGyro.mean__.Z   
+Numeric  
+-1:1*  
 
 tBodyGyro.std__.X   
+Numeric  
+-1:1*  
 
 tBodyGyro.std__.Y   
+Numeric  
+-1:1*  
 
 tBodyGyro.std__.Z   
+Numeric  
+-1:1*  
 
 tBodyGyroJerk.mean__.X   
+Numeric  
+-1:1*  
 
 tBodyGyroJerk.mean__.Y   
+Numeric  
+-1:1*  
 
 tBodyGyroJerk.mean__.Z   
+Numeric  
+-1:1*  
 
 tBodyGyroJerk.std__.X   
+Numeric  
+-1:1*  
 
 tBodyGyroJerk.std__.Y   
+Numeric  
+-1:1*  
 
 tBodyGyroJerk.std__.Z   
+Numeric  
+-1:1*  
 
 tBodyAccMag.mean__   
+Numeric  
+-1:1*  
 
 tBodyAccMag.std__   
+Numeric  
+-1:1*  
 
 tGravityAccMag.mean__   
+Numeric  
+-1:1*  
 
 tGravityAccMag.std__   
+Numeric  
+-1:1*  
 
 tBodyAccJerkMag.mean__   
+Numeric  
+-1:1*  
 
 tBodyAccJerkMag.std__   
+Numeric  
+-1:1*  
 
 tBodyGyroMag.mean__   
+Numeric  
+-1:1*  
 
 tBodyGyroMag.std__   
+Numeric  
+-1:1*  
 
 tBodyGyroJerkMag.mean__   
+Numeric  
+-1:1*  
 
 tBodyGyroJerkMag.std__   
+Numeric  
+-1:1*  
 
 fBodyAcc.mean__.X   
+Numeric  
+-1:1*  
 
 fBodyAcc.mean__.Y   
+Numeric  
+-1:1*  
 
 fBodyAcc.mean__.Z   
+Numeric  
+-1:1*  
 
 fBodyAcc.std__.X   
+Numeric  
+-1:1*  
 
 fBodyAcc.std__.Y   
+Numeric  
+-1:1*  
 
 fBodyAcc.std__.Z   
+Numeric  
+-1:1*  
 
 fBodyAccJerk.mean__.X   
+Numeric  
+-1:1*  
 
 fBodyAccJerk.mean__.Y   
+Numeric  
+-1:1*  
 
 fBodyAccJerk.mean__.Z   
+Numeric  
+-1:1*  
 
 fBodyAccJerk.std__.X   
+Numeric  
+-1:1*  
 
 fBodyAccJerk.std__.Y   
+Numeric  
+-1:1*  
 
 fBodyAccJerk.std__.Z   
+Numeric  
+-1:1*  
 
 fBodyGyro.mean__.X   
+Numeric  
+-1:1*  
 
 fBodyGyro.mean__.Y   
+Numeric  
+-1:1*  
 
 fBodyGyro.mean__.Z   
+Numeric  
+-1:1*  
 
 fBodyGyro.std__.X   
+Numeric  
+-1:1*  
 
 fBodyGyro.std__.Y   
+Numeric  
+-1:1*  
 
 fBodyGyro.std__.Z   
+Numeric  
+-1:1*  
 
 fBodyAccMag.mean__   
+Numeric  
+-1:1*  
 
 fBodyAccMag.std__   
+Numeric  
+-1:1*  
 
 fBodyAccJerkMag.mean__   
+Numeric  
+-1:1*  
 
 fBodyAccJerkMag.std__   
+Numeric  
+-1:1*  
 
 fBodyGyroMag.mean__   
+Numeric  
+-1:1*  
 
 fBodyGyroMag.std__   
+Numeric  
+-1:1*  
 
 fBodyGyroJerkMag.mean__   
+Numeric  
+-1:1*  
 
 fBodyGyroJerkMag.std__   
+Numeric  
+-1:1*  
+
+
+*"Features are normalized and bounded within [-1,1]". (9, p2)
 
 ## References
 
@@ -180,9 +334,11 @@ Note that those references that refer to forum postings are only accessible to t
 3. Anguita D, Ghio A, Oneto L, Parra X, Reyes-Ortiz JL. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 4. Anguita. A Public Domain Dataset for Human Activity Recognition Using Smartphones (Conference Paper). 2013. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013.
 5. What We Do | ORCATECH [Internet]. Oregon Health & Science University. [cited 2015 Jan 25]. Available from: http://www.ohsu.edu/xd/research/centers-institutes/orcatech/about/welcome.cfm  
-6. Dodge HH, Mattek NC, Austin D, Hayes TL, Kaye JA. In-home walking speeds and variability trajectories associated with mild cognitive impairment. Neurology. 2012; 78(24): 1946-52   
-7. Fantechi A, Nugent CD, Pinzuti A, Vicario E, Magherini T. An On-line system for automated recognition of human activities. European Journal of Law and Technology [Internet]. 2013 Aug 12;4(2). Available from: http://ejlt.org/article/view/189
-8. Anguita D, Ghio A, Oneto L, Parra X, Reyes-Ortiz JL. Feature Selection (features_info.txt file included with the public domain dataset). Dec 2012. Available from http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip
+6. Dodge HH, Mattek NC, Austin D, Hayes TL, Kaye JA. In-home walking speeds and variability trajectories associated with mild cognitive impairment. Neurology. 2012; 78(24): 1946-52    
+7. Fantechi A, Nugent CD, Pinzuti A, Vicario E, Magherini T. An On-line system for automated recognition of human activities. European Journal of Law and Technology [Internet]. 2013 Aug 12;4(2). Available from: http://ejlt.org/article/view/189   
+8. Anguita D, Ghio A, Oneto L, Parra X, Reyes-Ortiz JL. Feature Selection (features_info.txt file included with the public domain dataset). Dec 2012. Available from http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip   
+9. Anguita D, Ghio A, Oneto L, Parra X, Reyes-Ortiz JL. Human Activity Recognition Using Smartphones Dataset
+Version 1.0 (README.txt file included with the public domain dataset). Dec 2012. Available from http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip  
 
 
 
