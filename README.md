@@ -1,3 +1,20 @@
+# News flash!
+
+As a good Coursera fellow student I want to make life as easy as possible for those who might be assessing my work - so before I launch into the rather dry material about the Course Project here are instructions on how to download the tidy data file. 
+
+## How to read the tidy data file
+
+To read in the tidy data file I have uploaded (called HARTidyData) from the peer assessment page so that you can visually inspect it to confirm that it is indeed 'tidy', do the following (2):
+
+* right click on the file name shown (HARTidyData) in the first window of the peer assessment page to download it to your computer (apologies that these instructions are rather 'Windows-centric' - I'm confident that if you are using a Mac or other OS you'll be able to figure it out!)
+* name the file with whatever file name you prefer - don't forget to give it a .txt extension if your system does not recognize it as a text file and append that extension automatically
+* save the file into your R or RStudio working directory
+* from the working directory enter and run the code below to read the file into a data frame and view it   
+   `data <- read.table("yourfilename.txt", header=TRUE)`  
+   `View(data)`
+   
+We now return you to our regularly scheduled Course Project documentation.
+
 # Course Project
 
 There are four deliverables for the Course Project in the Getting and Cleaning Data Course offered by Coursera from January 5, 2015 to February 2, 2015, the first three of which are found in this repository (https://github.com/SusanZMartin/Getting-and-Cleaning-Data-Course/tree/Course-Project-January-2015):  
@@ -33,17 +50,6 @@ The tidy data file differs from the entire dataset in that:
 
 The tidy data set has the dimensions of 180 rows by 68 columns (66 variables plus the Subject and Activity columns).
 
-## How to read the tidy data file
-
-To read in the tidy data file I have uploaded (called HARTidyData) from the peer assessment page so that you can visually inspect it to confirm that it is indeed 'tidy', do the following (2):
-
-* right click on the file name shown (HARTidyData) in the first window of the peer assessment page to download it to your computer (apologies that these instructions are rather 'Windows-centric' - I'm confident that if you are using a Mac or other OS you'll be able to figure it out!)
-* name the file with whatever file name you prefer - don't forget to give it a .txt extension if your system does not recognize it as a text file and append that extension automatically
-* save the file into your R or RStudio working directory
-* from the working directory enter and run the code below to read the file into a data frame and view it   
-   `data <- read.table("yourfilename.txt", header=TRUE)`  
-   `View(data)`
-   
 ## References
 
 Note that those references that refer to forum postings are only accessible to those that are enrolled in the Getting and Cleaning Data course running January 5, 2015 to February 2, 2015. References use Vancouver style which puts a number in brackets in the text to indicate a citation and arranges the reference list by ascending numerical order by citation number.
