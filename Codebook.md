@@ -8,7 +8,7 @@ This Codebook aims to provide "information on the structure, contents,and layout
 
 ### Human Activity Recognition (HAR) Research
 
-Since the 1980s researchers have been working on learning how to 'recognize' human activities from various kinds of data. When we (humans) consider this we fail to see why this should be so challenging - if you show even a normally-abled (in terms of speech, intelligence and visual ability) 5-year-old child a video clip of a person walking and ask them if the person was 'sitting' or 'walking' you are almost 100% to get the right answer unless the child is intentionally misleading you. But a computer if presented with the same data - a video clip - or even sensor data produced by single/multiple sensors on a subject's body collected with high frequency over repeated periods of activity (walking, jogging) will need to 'learn' how to recognize an activity.
+Since the 1980s, researchers have been working on learning how to 'recognize' human activities from various kinds of data. When we (humans) consider this we fail to see why this should be so challenging - if you show even a normally-abled (in terms of speech, intelligence and visual ability) 5-year-old child a video clip of a person walking and ask them if the person was 'sitting' or 'walking' you are almost 100% likely to get the right answer unless the child is intentionally misleading you. But if a computer is presented with the same data - a video clip - or even sensor data produced by single/multiple sensors on a subject's body collected with high frequency over repeated periods of activity (walking, jogging) the computer will need to 'learn' how to recognize an activity and distinguish it from the pattern produced by other activities.(2)
 
 
 
@@ -207,5 +207,6 @@ angle_Z.gravityMean_
 
 Note that those references that refer to forum postings are only accessible to those that are enrolled in the Getting and Cleaning Data course running January 5, 2015 to February 2, 2015. References use Vancouver style which puts a number in brackets in the text to indicate a citation and arranges the reference list by ascending numerical order by citation number.
 
-1. FAQs [Internet]. [cited 2015 Jan 24]. Available from: http://www.icpsr.umich.edu/icpsrweb/ICPSR/support/faqs/2006/01/what-is-codebook
-2. 
+1. FAQs [Internet]. [cited 2015 Jan 25]. Available from: http://www.icpsr.umich.edu/icpsrweb/ICPSR/support/faqs/2006/01/what-is-codebook
+2. Activity recognition - Wikipedia, the free encyclopedia [Internet]. [cited 2015 Jan 25]. Available from: http://en.wikipedia.org/wiki/Activity_recognition
+
