@@ -44,7 +44,8 @@ There are two child directories (or folders) within the UCI HAR Dataset director
 
 ## Steps in producing the tidy data file
 
-This is an overview of the steps carried out in the run_analysis.R script (the script is commented so you may also determine what is being done by reading the comments in the file itself):  
+This is an overview of the steps carried out in the run_analysis.R script (the script is commented so you may also determine what is being done by reading the comments in the file itself):   
+    
 1. load the dplyr package    
    
 2. read the 8 text files (features.txt, activity_labels.txt, subject_test.txt, subject_train.txt, X_test.txt, X_train.txt, y_test.txt, y_train.txt) into data frame tables using the read.table function      
