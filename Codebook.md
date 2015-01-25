@@ -62,263 +62,263 @@ Character
 Possible Values: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS  
 The activity that corresponds to that row's measurements
 
-__tBodyAcc.mean__.X__     
+**tBodyAcc.mean__.X**     
 Numeric  
 -1:1*  
 
-__tBodyAcc.mean__.Y   
+**tBodyAcc.mean__.Y**   
 Numeric  
 -1:1*  
 
-__tBodyAcc.mean__.Z   
+**tBodyAcc.mean__.Z**   
 Numeric  
 -1:1*  
    
-__tBodyAcc.std__.Y   
+**tBodyAcc.std__.Y**   
 Numeric  
 -1:1*  
 
-__tBodyAcc.std__.Z   
+**tBodyAcc.std__.Z**   
 Numeric  
 -1:1*  
 
-__tGravityAcc.mean__.X   
+**tGravityAcc.mean__.X**   
 Numeric  
 -1:1*  
 
-__tGravityAcc.mean__.Y   
+**tGravityAcc.mean__.Y**   
 Numeric  
 -1:1*  
 
-__tGravityAcc.mean__.Z   
+**tGravityAcc.mean__.Z**   
 Numeric  
 -1:1*  
 
-__tGravityAcc.std__.X   
+**tGravityAcc.std__.X**   
 Numeric  
 -1:1*  
 
-__tGravityAcc.std__.Y   
+**tGravityAcc.std__.Y**   
 Numeric  
 -1:1*  
 
-__tGravityAcc.std__.Z   
+**tGravityAcc.std__.Z**   
 Numeric  
 -1:1*  
 
-__tBodyAccJerk.mean__.X   
+**tBodyAccJerk.mean__.X**   
 Numeric  
 -1:1*  
 
-__tBodyAccJerk.mean__.Y   
+**tBodyAccJerk.mean__.Y**   
 Numeric  
 -1:1*  
 
-__tBodyAccJerk.mean__.Z   
+**tBodyAccJerk.mean__.Z**   
 Numeric  
 -1:1*  
 
-__tBodyAccJerk.std__.X   
+**tBodyAccJerk.std__.X**   
 Numeric  
 -1:1*  
 
-__tBodyAccJerk.std__.Y   
+**tBodyAccJerk.std__.Y**   
 Numeric  
 -1:1*  
 
-__tBodyAccJerk.std__.Z   
+**tBodyAccJerk.std__.Z**   
 Numeric  
 -1:1*  
 
-__tBodyGyro.mean__.X   
+**tBodyGyro.mean__.X**   
 Numeric  
 -1:1*  
 
-__tBodyGyro.mean__.Y   
+**tBodyGyro.mean__.Y**  
 Numeric  
 -1:1*  
 
-__tBodyGyro.mean__.Z   
+**tBodyGyro.mean__.Z**   
 Numeric  
 -1:1*  
 
-__tBodyGyro.std__.X   
+**tBodyGyro.std__.X**   
 Numeric  
 -1:1*  
 
-__tBodyGyro.std__.Y   
+**tBodyGyro.std__.Y**   
 Numeric  
 -1:1*  
 
-__tBodyGyro.std__.Z   
+**tBodyGyro.std__.Z**  
 Numeric  
 -1:1*  
 
-__tBodyGyroJerk.mean__.X   
+**tBodyGyroJerk.mean__.X**   
 Numeric  
 -1:1*  
 
-__tBodyGyroJerk.mean__.Y   
+**tBodyGyroJerk.mean__.Y**  
 Numeric  
 -1:1*  
 
-__tBodyGyroJerk.mean__.Z   
+**tBodyGyroJerk.mean__.Z**   
 Numeric  
 -1:1*  
 
-__tBodyGyroJerk.std__.X   
+**tBodyGyroJerk.std__.X**   
 Numeric  
 -1:1*  
 
-__tBodyGyroJerk.std__.Y   
+**tBodyGyroJerk.std__.Y**   
 Numeric  
 -1:1*  
 
-__tBodyGyroJerk.std__.Z   
+**tBodyGyroJerk.std__.Z**   
 Numeric  
 -1:1*  
 
-__tBodyAccMag.mean__   
+**tBodyAccMag.mean__**   
 Numeric  
 -1:1*  
 
-__tBodyAccMag.std__   
+**tBodyAccMag.std__**   
 Numeric  
 -1:1*  
 
-__tGravityAccMag.mean__   
+**tGravityAccMag.mean__**   
 Numeric  
 -1:1*  
 
-__tGravityAccMag.std__   
+**tGravityAccMag.std__**   
 Numeric  
 -1:1*  
 
-__tBodyAccJerkMag.mean__   
+**tBodyAccJerkMag.mean__**   
 Numeric  
 -1:1*  
 
-__tBodyAccJerkMag.std__   
+**tBodyAccJerkMag.std__**   
 Numeric  
 -1:1*  
 
-__tBodyGyroMag.mean__   
+**tBodyGyroMag.mean__**   
 Numeric  
 -1:1*  
 
-__tBodyGyroMag.std__   
+**tBodyGyroMag.std__**   
 Numeric  
 -1:1*  
 
-__tBodyGyroJerkMag.mean__   
+**tBodyGyroJerkMag.mean__**   
 Numeric  
 -1:1*  
 
-__tBodyGyroJerkMag.std__   
+**tBodyGyroJerkMag.std__**   
 Numeric  
 -1:1*  
 
-__fBodyAcc.mean__.X   
+**fBodyAcc.mean__.X**   
 Numeric  
 -1:1*  
 
-__fBodyAcc.mean__.Y   
+**fBodyAcc.mean__.Y**   
 Numeric  
 -1:1*  
 
-__fBodyAcc.mean__.Z   
+**fBodyAcc.mean__.Z**   
 Numeric  
 -1:1*  
 
-__fBodyAcc.std__.X   
+**fBodyAcc.std__.X**   
 Numeric  
 -1:1*  
 
-__fBodyAcc.std__.Y   
+**fBodyAcc.std__.Y**   
 Numeric  
 -1:1*  
 
-__fBodyAcc.std__.Z   
+**fBodyAcc.std__.Z**   
 Numeric  
 -1:1*  
 
-__fBodyAccJerk.mean__.X   
+**fBodyAccJerk.mean__.X**   
 Numeric  
 -1:1*  
 
-__fBodyAccJerk.mean__.Y   
+**fBodyAccJerk.mean__.Y**   
 Numeric  
 -1:1*  
 
-__fBodyAccJerk.mean__.Z   
+**fBodyAccJerk.mean__.Z**   
 Numeric  
 -1:1*  
 
-__fBodyAccJerk.std__.X   
+**fBodyAccJerk.std__.X**   
 Numeric  
 -1:1*  
 
-__fBodyAccJerk.std__.Y   
+**fBodyAccJerk.std__.Y**   
 Numeric  
 -1:1*  
 
-__fBodyAccJerk.std__.Z   
+**fBodyAccJerk.std__.Z**   
 Numeric  
 -1:1*  
 
-__fBodyGyro.mean__.X   
+**fBodyGyro.mean__.X**   
 Numeric  
 -1:1*  
 
-__fBodyGyro.mean__.Y   
+**fBodyGyro.mean__.Y**   
 Numeric  
 -1:1*  
 
-__fBodyGyro.mean__.Z   
+**fBodyGyro.mean__.Z**   
 Numeric  
 -1:1*  
 
-__fBodyGyro.std__.X   
+**fBodyGyro.std__.X**   
 Numeric  
 -1:1*  
 
-__fBodyGyro.std__.Y   
+**fBodyGyro.std__.Y**   
 Numeric  
 -1:1*  
 
-__fBodyGyro.std__.Z   
+**fBodyGyro.std__.Z**   
 Numeric  
 -1:1*  
 
-__fBodyAccMag.mean__   
+**fBodyAccMag.mean__**   
 Numeric  
 -1:1*  
 
-__fBodyAccMag.std__   
+**fBodyAccMag.std__**   
 Numeric  
 -1:1*  
 
-__fBodyAccJerkMag.mean__   
+**fBodyAccJerkMag.mean__**   
 Numeric  
 -1:1*  
 
-__fBodyAccJerkMag.std__   
+**fBodyAccJerkMag.std__**   
 Numeric  
 -1:1*  
 
-__fBodyGyroMag.mean__   
+**fBodyGyroMag.mean__**   
 Numeric  
 -1:1*  
 
-__fBodyGyroMag.std____   
+**fBodyGyroMag.std__**  
 Numeric  
 -1:1*  
 
-__fBodyGyroJerkMag.mean____   
+**fBodyGyroJerkMag.mean__**    
 Numeric  
 -1:1*  
 
-__fBodyGyroJerkMag.std____   
+**fBodyGyroJerkMag.std__**     
 Numeric  
 -1:1*  
 
