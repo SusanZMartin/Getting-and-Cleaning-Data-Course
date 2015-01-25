@@ -4,7 +4,7 @@ As a good Coursera fellow student I want to make life as easy as possible for th
 
 ## How to read the tidy data file
 
-To read in the tidy data file I have uploaded (called HARTidyData) from the peer assessment page so that you can visually inspect it to confirm that it is indeed 'tidy', do the following (2):
+To read in the tidy data file I have uploaded (called HARTidyData) from the peer assessment page so that you can visually inspect it to confirm that it is indeed 'tidy', do the following (1):
 
 * right click on the file name shown (HARTidyData) in the first window of the peer assessment page to download it to your computer (apologies that these instructions are rather 'Windows-centric' - I'm confident that if you are using a Mac or other OS you'll be able to figure it out!)
 * name the file with whatever file name you prefer - don't forget to give it a .txt extension if your system does not recognize it as a text file and append that extension automatically
@@ -46,7 +46,7 @@ There are two child directories (or folders) within the UCI HAR Dataset director
 
 The tidy data file differs from the entire dataset in that:  
 * each row contains the mean of a variable that was measured for a subject while performing that activity (thus the tidy data file has 180 rows - 30 subjects each of which performed 6 activities)  
-* there are not 561 measurements for each subject:activity combination but rather 66 which were selected based on the instruction for the assignment which was to extract "only the measurements on the mean and standard deviation for each measurement" (1,p1) (for more information on the rationale used to select these variables see the Codebook)
+* there are not 561 measurements for each subject:activity combination but rather 66 which were selected based on the instruction for the assignment which was to extract "only the measurements on the mean and standard deviation for each measurement" (2,p1) (for more information on the rationale used to select these variables see the Codebook)
 
 The tidy data set has the dimensions of 180 rows by 68 columns (66 variables plus the Subject and Activity columns).
 
@@ -54,6 +54,7 @@ The tidy data set has the dimensions of 180 rows by 68 columns (66 variables plu
 
 Note that those references that refer to forum postings are only accessible to those that are enrolled in the Getting and Cleaning Data course running January 5, 2015 to February 2, 2015. References use Vancouver style which puts a number in brackets in the text to indicate a citation and arranges the reference list by ascending numerical order by citation number.
 
-1. Leek J. Peer Assessments/Getting and Cleaning Data Course Project. In: Getting and Cleaning Data/Course Project [Internet] Coursera; 2015 Jan 6 [cited 2015 Jan 25]. Retrieved from https://class.coursera.org/getdata-010/human_grading/view/courses/973497/assessments/3/submissions
-2. Hood D. David's Project FAQ. In: Getting and Cleaning Data/Forums/Course Project [Internet] Coursera; 2015 Jan 6           [cited 2015 Jan 25]. [Original post ~86 lines]. Retrieved from https://class.coursera.org/getdata-010/forum/thread?thread_id=49
+1. Hood D. David's Project FAQ. In: Getting and Cleaning Data/Forums/Course Project [Internet] Coursera; 2015 Jan 6           [cited 2015 Jan 25]. [Original post ~86 lines]. Retrieved from https://class.coursera.org/getdata-010/forum/thread?thread_id=49
+2. Leek J. Peer Assessments/Getting and Cleaning Data Course Project. In: Getting and Cleaning Data/Course Project [Internet] Coursera; 2015 Jan 6 [cited 2015 Jan 25]. Retrieved from https://class.coursera.org/getdata-010/human_grading/view/courses/973497/assessments/3/submissions
+
 
