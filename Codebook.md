@@ -31,177 +31,135 @@ Subject
 
 Activity
 
-tBodyAcc.mean__.X
+tBodyAcc.mean__.X   
 
-tBodyAcc.mean__.Y
+tBodyAcc.mean__.Y   
 
-tBodyAcc.mean__.Z
+tBodyAcc.mean__.Z   
+   
+tBodyAcc.std__.Y   
 
-tBodyAcc.std__.X
+tBodyAcc.std__.Z   
 
-tBodyAcc.std__.Y
+tGravityAcc.mean__.X   
 
-tBodyAcc.std__.Z
+tGravityAcc.mean__.Y   
 
-tGravityAcc.mean__.X
+tGravityAcc.mean__.Z   
 
-tGravityAcc.mean__.Y
+tGravityAcc.std__.X   
 
-tGravityAcc.mean__.Z
+tGravityAcc.std__.Y   
 
-tGravityAcc.std__.X
+tGravityAcc.std__.Z   
 
-tGravityAcc.std__.Y
+tBodyAccJerk.mean__.X   
 
-tGravityAcc.std__.Z
+tBodyAccJerk.mean__.Y   
 
-tBodyAccJerk.mean__.X
+tBodyAccJerk.mean__.Z   
 
-tBodyAccJerk.mean__.Y
+tBodyAccJerk.std__.X   
 
-tBodyAccJerk.mean__.Z
+tBodyAccJerk.std__.Y   
 
-tBodyAccJerk.std__.X
+tBodyAccJerk.std__.Z   
 
-tBodyAccJerk.std__.Y
+tBodyGyro.mean__.X   
 
-tBodyAccJerk.std__.Z
+tBodyGyro.mean__.Y   
 
-tBodyGyro.mean__.X
+tBodyGyro.mean__.Z   
 
-tBodyGyro.mean__.Y
+tBodyGyro.std__.X   
 
-tBodyGyro.mean__.Z
+tBodyGyro.std__.Y   
 
-tBodyGyro.std__.X
+tBodyGyro.std__.Z   
 
-tBodyGyro.std__.Y
+tBodyGyroJerk.mean__.X   
 
-tBodyGyro.std__.Z
+tBodyGyroJerk.mean__.Y   
 
-tBodyGyroJerk.mean__.X
+tBodyGyroJerk.mean__.Z   
 
-tBodyGyroJerk.mean__.Y
+tBodyGyroJerk.std__.X   
 
-tBodyGyroJerk.mean__.Z
+tBodyGyroJerk.std__.Y   
 
-tBodyGyroJerk.std__.X
+tBodyGyroJerk.std__.Z   
 
-tBodyGyroJerk.std__.Y
+tBodyAccMag.mean__   
 
-tBodyGyroJerk.std__.Z
+tBodyAccMag.std__   
 
-tBodyAccMag.mean__
+tGravityAccMag.mean__   
 
-tBodyAccMag.std__
+tGravityAccMag.std__   
 
-tGravityAccMag.mean__
+tBodyAccJerkMag.mean__   
 
-tGravityAccMag.std__
+tBodyAccJerkMag.std__   
 
-tBodyAccJerkMag.mean__
+tBodyGyroMag.mean__   
 
-tBodyAccJerkMag.std__
+tBodyGyroMag.std__   
 
-tBodyGyroMag.mean__
+tBodyGyroJerkMag.mean__   
 
-tBodyGyroMag.std__
+tBodyGyroJerkMag.std__   
 
-tBodyGyroJerkMag.mean__
+fBodyAcc.mean__.X   
 
-tBodyGyroJerkMag.std__
+fBodyAcc.mean__.Y   
 
-fBodyAcc.mean__.X
+fBodyAcc.mean__.Z   
 
-fBodyAcc.mean__.Y
+fBodyAcc.std__.X   
 
-fBodyAcc.mean__.Z
+fBodyAcc.std__.Y   
 
-fBodyAcc.std__.X
+fBodyAcc.std__.Z   
 
-fBodyAcc.std__.Y
+fBodyAccJerk.mean__.X   
 
-fBodyAcc.std__.Z
+fBodyAccJerk.mean__.Y   
 
-fBodyAcc.meanFreq__.X
+fBodyAccJerk.mean__.Z   
 
-fBodyAcc.meanFreq__.Y
+fBodyAccJerk.std__.X   
 
-fBodyAcc.meanFreq__.Z
+fBodyAccJerk.std__.Y   
 
-fBodyAccJerk.mean__.X
+fBodyAccJerk.std__.Z   
 
-fBodyAccJerk.mean__.Y
+fBodyGyro.mean__.X   
 
-fBodyAccJerk.mean__.Z
+fBodyGyro.mean__.Y   
 
-fBodyAccJerk.std__.X
+fBodyGyro.mean__.Z   
 
-fBodyAccJerk.std__.Y
+fBodyGyro.std__.X   
 
-fBodyAccJerk.std__.Z
+fBodyGyro.std__.Y   
 
-fBodyAccJerk.meanFreq__.X
+fBodyGyro.std__.Z   
 
-fBodyAccJerk.meanFreq__.Y
+fBodyAccMag.mean__   
 
-fBodyAccJerk.meanFreq__.Z
+fBodyAccMag.std__   
 
-fBodyGyro.mean__.X
+fBodyAccJerkMag.mean__   
 
-fBodyGyro.mean__.Y
+fBodyAccJerkMag.std__   
 
-fBodyGyro.mean__.Z
+fBodyGyroMag.mean__   
 
-fBodyGyro.std__.X
+fBodyGyroMag.std__   
 
-fBodyGyro.std__.Y
+fBodyGyroJerkMag.mean__   
 
-fBodyGyro.std__.Z
-
-fBodyGyro.meanFreq__.X
-
-fBodyGyro.meanFreq__.Y
-
-fBodyGyro.meanFreq__.Z
-
-fBodyAccMag.mean__
-
-fBodyAccMag.std__
-
-fBodyAccMag.meanFreq__
-
-fBodyAccJerkMag.mean__
-
-fBodyAccJerkMag.std__
-
-fBodyAccJerkMag.meanFreq__
-
-fBodyGyroMag.mean__
-
-fBodyGyroMag.std__
-
-fBodyGyroMag.meanFreq__
-
-fBodyGyroJerkMag.mean__
-
-fBodyGyroJerkMag.std__
-
-fBodyGyroJerkMag.meanFreq__
-
-angle_tBodyAccMean.gravity_
-
-angle_tBodyAccJerkMean_.gravityMean_
-
-angle_tBodyGyroMean.gravityMean_
-
-angle_tBodyGyroJerkMean.gravityMean_
-
-angle_X.gravityMean_
-
-angle_Y.gravityMean_
-
-angle_Z.gravityMean_
+fBodyGyroJerkMag.std__   
 
 ## References
 
