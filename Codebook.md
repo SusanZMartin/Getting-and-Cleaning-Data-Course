@@ -20,7 +20,7 @@ The researchers recruited 30 volunteers aged between 19 and 48 for this study. N
 
 Twenty one of the subjects (70%) were arbitrarily chosen to be in the TRAIN sample which was used to 'train' the computer in recognizing human activities (these were subjects 1, 3, 5, 6, 7, 8, 11, 14, 15, 16, 17, 19, 21, 22, 23, 25, 26, 27, 28, 29, 30). The measurements obtained from the 9 subjects in the TEST sample (subjects 2, 4, 9, 10, 12, 13, 18 ,20, 24) were then examined by the computer and assigned an 'activity' based on what it had 'learned' examining the TRAIN sample's measurements. (4)
 
-The number of observations for each subject ranged from a low of 281 to a high of 409 (that is for all 6 activities) with a mean of 343. Number of observations for each activity ranged from a low of 36 to a high of 95 (across all 6 activities) with a mean of 57. More information on the number of observations per subject and number of observations per activity per subject can be found by uncommenting and running lines XX-XX at the end of the run_analysis.R script.
+The number of observations for each subject ranged from a low of 281 to a high of 409 (that is for all 6 activities) with a mean of 343. Number of observations for each activity ranged from a low of 36 to a high of 95 (across all 6 activities) with a mean of 57. More information on the number of observations per subject and number of observations per activity per subject can be found by uncommenting and running lines 176-191 at the end of the run_analysis.R script.
 
 ## Data Processing
 
